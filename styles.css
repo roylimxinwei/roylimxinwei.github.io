@@ -25,11 +25,13 @@ header {
 header h1 {
     font-size: 3em;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 header p {
     font-size: 1.2em;
     color: #aaa;
+    margin-top: 0;
 }
 
 /* Projects Section */
@@ -40,7 +42,11 @@ header p {
 .projects h2 {
     font-size: 2em;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.projects p{
+    margin-top: 0;
 }
 
 .projects-grid {
@@ -71,6 +77,8 @@ header p {
 .project-card p {
     font-size: 1em;
     color: #aaa;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .project-links {
@@ -100,7 +108,7 @@ header p {
 section h2 {
     font-size: 2em;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .education-item, .certification-item, .interest-item {
@@ -122,6 +130,10 @@ section h2 {
 .education-item p, .certification-item p, .interest-item p {
     font-size: 1em;
     color: #aaa;
+}
+
+.projects p, .education p, .certification p, .interests p{
+    margin-top: 0;
 }
 
 /* Footer */

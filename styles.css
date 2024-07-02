@@ -1,0 +1,190 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    background-color: #181818;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+/* Projects Section */
+.projects {
+    padding: 20px 0;
+}
+
+.projects h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #252525;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project-card time {
+    display: block;
+    font-size: 1.2em;
+    color: #8bc34a;
+}
+
+.project-card h3 a {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #aaa;
+}
+
+.project-links {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+/* Other Sections */
+.education, .certifications, .interests {
+    padding: 20px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.education-item, .certification-item, .interest-item {
+    margin-bottom: 20px;
+}
+
+.education-item time, .certification-item time, .interest-item time {
+    display: block;
+    font-size: 1.2em;
+    color: #8bc34a;
+}
+
+.education-item h3 a, .certification-item h3 a, .interest-item h3 a {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.education-item p, .certification-item p, .interest-item p {
+    font-size: 1em;
+    color: #aaa;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #222;
+    color: #fff;
+}
+
+footer h4 {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .projects h2, section h2 {
+        font-size: 1.8em;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card h3 a, .education-item h3 a, .certification-item h3 a, .interest-item h3 a {
+        font-size: 1.2em;
+    }
+
+    .project-card p, .education-item p, .certification-item p, .interest-item p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .projects h2, section h2 {
+        font-size: 1.5em;
+    }
+
+    .project-card h3 a, .education-item h3 a, .certification-item h3 a, .interest-item h3 a {
+        font-size: 1em;
+    }
+
+    .project-card p, .education-item p, .certification-item p, .interest-item p {
+        font-size: 0.8em;
+    }
+}

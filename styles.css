@@ -148,6 +148,20 @@ footer h4 {
     margin: 10px 0;
 }
 
+#download-resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#download-resume-btn:hover {
+    background-color: #0056b3;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {

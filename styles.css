@@ -266,6 +266,16 @@ footer {
     .project-card p, .education-item p, .certification-item p, .interest-item p {
         font-size: 0.9em;
     }
+
+    .interest-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .afbt-image {
+        max-width: 100%;
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -287,5 +297,20 @@ footer {
 
     .project-card p, .education-item p, .certification-item p, .interest-item p {
         font-size: 0.8em;
+    }
+
+    .interest-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .afbt-image {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .socials {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

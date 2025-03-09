@@ -270,12 +270,25 @@ footer {
 
 .tech-images {
     display: flex;
+    flex-wrap: wrap; /* Allow images to wrap onto the next line */
     gap: 15px; /* Adjust spacing between images */
+    justify-content: center; /* Center images when wrapping */
 }
 
 .tech-images img {
-    width: 60px; /* Increase size */
-    height: auto;
+    max-width: 60px; /* Ensure images scale properly */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .tech-images {
+        gap: 10px; /* Reduce gap on smaller screens */
+    }
+
+    .tech-images img {
+        width: 100px; /* Adjust image size for smaller screens */
+    }
 }
 
 .video-container {
